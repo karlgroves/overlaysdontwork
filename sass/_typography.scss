@@ -1,0 +1,65 @@
+
+html, body {
+  font-family: $font-family-sans;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  line-height: $line-height;
+}
+
+ul{
+  list-style-type: square;
+}
+
+ol, ul {
+  margin-left: .75em;
+  margin-top: 0;
+  margin-bottom: 10.5px
+}
+
+ul ul, ol ul, ul ol, ol ol {
+  margin-bottom: 0
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+a {
+  background: transparent;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+  border-bottom: 1px dotted #b4bcc2;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+small {
+  font-size: 80%;
+}
+
+code pre, pre code {
+  color: #000;
+  font-family: 'Source Code Pro', 'courier new', sans-serif;
+  word-wrap: break-word;
+}

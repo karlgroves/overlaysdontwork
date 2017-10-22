@@ -1,0 +1,215 @@
+
+form div {
+  margin: .5em;
+  clear: both;
+}
+
+form label span {
+  display: block;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+label.inline span, li input[type="checkbox"], li label, li input[type="radio"] {
+  display: inline;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="password"],
+input[type="time"],
+input[type="tel"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+input[type="search"],
+input[type="range"],
+input[type="number"],
+textarea,
+.cke_chrome {
+  width: $form-field-width;
+}
+
+form textarea, .cke_chrome {
+  height: $textarea-height;
+}
+
+form textarea {
+  resize: vertical;
+  overflow: auto;
+}
+
+/* '<input type="radio">' elements */
+div.form_radio {
+  clear: both;
+  padding-top: 5px;
+}
+
+/* '<input type="checkbox">' elements */
+input[type="checkbox"], input[type="radio"] {
+  clear: both;
+  padding-top: 5px;
+}
+
+input[type="radio"], label.inline {
+  display: inline;
+}
+
+legend {
+  font-weight: bold;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 21px;
+  font-size: 22.5px;
+  line-height: inherit;
+  color: #2c3e50;
+  border-bottom: 1px solid #e5e5e5
+}
+
+/* The fieldset element */
+fieldset {
+  padding: 0 5px 5px 5px;
+  border: 1px solid #c0c0c0;
+  margin: 0
+}
+
+/* Basically just the "*" that indicates required fields */
+.reqd {
+  vertical-align: top;
+  color: red;
+  font-weight: bold;
+  font-size: medium;
+  margin-left: 4px;
+}
+
+/* Properties for the warning messages displayed during form validation */
+.warn_msg, #warn_box, .warn {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  padding: 5px;
+  font-weight: bold;
+  color: red;
+}
+
+.warn_img {
+  border: 0;
+  margin-right: 5px;
+}
+
+#warn_list {
+  list-style-type: square;
+  color: #000;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+/* Class applied to form elements when an error happens */
+.element_error_class {
+  border: 1px solid red;
+  color: red;
+}
+
+/* the styling for the side-by-side form elements, i.e. "yes/no" radio buttons */
+span.sidexside {
+  margin-right: 20px;
+}
+
+input[type="submit"][value="OK"], input[type="button"][value="Cancel"], input[type="submit"][value="Edit..."]
+input[type="submit"][value="Delete"]
+input[type="submit"][value="&lt;&lt; Back"] {
+  height: 22px;
+  width: 70px;
+  padding-bottom: 2px;
+}
+
+legend a {
+  cursor: help;
+}
+
+input:focus, textarea:focus, select:focus, input:hover, textarea:hover, select:hover {
+  border: 2px solid $links_and_buttons_color;
+}
+
+.dateSet label, .dateSet select {
+  display: inline;
+}
+
+.dateSet label {
+  @include offscreen;
+}

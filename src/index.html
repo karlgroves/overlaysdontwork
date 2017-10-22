@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Web Accessibility Overlays Do Not Work</title>
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css"/>
+  <link rel="stylesheet" href="/style.css" type="text/css"/>
+</head>
+<body>
+<header>
+  <h1>Web Accessibility Overlays Do Not Work</h1>
+</header>
+<blockquote>
+  <span>What is this?</span>
+  <span>How it works</span>
+  <span>Problems</span>
+</blockquote>
+<section role="region" aria-labelledby="explanationHeader" id="explanation" tabindex="-1">
+  <h2 id="explanationHeader">What this is</h2>
+  <p>First, an apology for any users with disabilities. This page is purposely broken in ways that will frustrate you in
+    weird and unpredictable ways. Here's why:</p>
+  <p>For years, I've been warning people not to get sucked into the false promises of products that claim to magically
+    make your website accessible:</p>
+  <ul>
+    <li><a
+      href="http://www.karlgroves.com/2016/01/07/on-overlays-as-a-means-of-resolving-website-accessibility-issues/">&quot;On
+      overlays as a means of resolving website accessibility issues&quot;</a></li>
+    <li><a href="http://www.karlgroves.com/2012/04/19/can-assistive-technology-make-a-website-accessible/">&quot;Can
+      assistive technology make a website accessble?&quot;</a></li>
+    <li><a href="http://www.karlgroves.com/2015/11/13/when-the-treatment-is-worse-than-the-disease/">&quot;When the
+      treatment is worse than the disease.&quot;</a></li>
+  </ul>
+
+  <p><a href="https://groups.google.com/forum/?hl=en#!msg/comp.infosystems.www.authoring.html/vU-Z_LnBX64/VA2ICES_MQkJ">I'm
+    not the only one with these criticisms</a>. My feelings have been echoed by many others <a
+    href="https://www.linkedin.com/groups/1796098/1796098-83364189">including Jim Thatcher</a> a legend in
+    accessibility.</p>
+
+  <p>Unfortunately, well-meaning customers are still being suckered by sales people claiming that their product &quot;automatically
+    transforms the website to meet 508 and WCAG 2.0 AA accessibility standards.&quot; These claims are, in a word:
+    <strong>bullshit</strong>. I've developed this page to prove this.</p>
+
+  <p>This page is a challenge to all of those vendors: Make this page accessible by <a
+    href="http://www.csun.edu/cod/conference/2018/sessions/">CSUN 2018</a> and prove it.</p>
+
+</section>
+
+<h6 style="font-size: 2em;">I got 99 Problems and Overlays can't find one</h6>
+<main id="main">
+
+
+</main>
+
+<section role="region" aria-labelledby="howItWorksHeader" id="howItWorks" tabindex="-1">
+  <h2 id="howItWorksHeader">How it Works</h2>
+
+  <p>This page presents a large number of examples of inaccessible code that cannot be reliably fixed by an &quot;overlay&quot;
+    product. Each of the examples is provided along with an explanation of why it is a problem and why an overlay cannot
+    fix it.</p>
+
+  <p>The problems are chosen at random and presented via JavaScript. This, of course, is problem #1 which is that all of
+    the content inside the <code>&lt;main&gt;</code> element relies on JavaScript. Then again, so do the overlays.</p>
+
+  <p>Some overlay products need to be explicitly coded to the specific web site, which makes the overlay more effective,
+    but also more brittle. Custom overlay solutions are quick to break when sites are changed during normal maintenance
+    and modifications. I've taken steps to confuse attempts at custom solutions, too.</p>
+
+  <p>Although some of these examples might seem like weird edge-cases, they are not. Every one is an example based on
+    the most commonly logged issues across over 260 accessibility audits that included manual testing.</p>
+
+  <p>Happy hunting!</p>
+</section>
+<footer>
+  Foo
+</footer>
+<script src="/jquery/jquery.min.js"></script>
+<script src="/js/overlaysDontWork.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+{
+  "root": true,
+  "extends": "eslint:recommended",
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "commonjs": true,
+    "jquery": true
+  },
+  "globals": {
+    "log": true
+  },
+  "rules": {
+    "brace-style": [
+      "warn",
+      "stroustrup"
+    ],
+    "camelcase": "off",
+    "curly": "error",
+    "eqeqeq": "error",
+    "new-cap": "error",
+    "no-bitwise": "error",
+    "no-caller": "error",
+    "no-eq-null": "error",
+    "no-unused-expressions": "error",
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": false
+      }
+    ],
+    "no-var": "warn",
+    "one-var": [
+      "error",
+      "never"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "require-jsdoc": "error",
+    "semi": [
+      "error",
+      "always"
+    ],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "strict": [
+      "error",
+      "global"
+    ],
+    "valid-jsdoc": [
+      "error",
+      {
+        "prefer": {
+          "return": "returns"
+        },
+        "requireReturn": false,
+        "requireReturnDescription": false
+      }
+    ],
+    "wrap-iife": [
+      "error",
+      "any"
+    ]
+  }
+}

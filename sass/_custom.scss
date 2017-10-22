@@ -1,0 +1,12 @@
+
+/**
+ * Strip off all focus indication
+ */
+*:focus, *:hover{
+  outline: none;
+  cursor: none;
+}
+
+*{
+  cursor: none;
+}
