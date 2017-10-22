@@ -1,0 +1,26 @@
+<h1>Tables for Bulleted Lists</h1>
+
+<p>Benefits of bulleted lists:</p>
+<table>
+  <tr>
+    <td>&bullet;</td><td></td><td>They make it easier to read content</td>
+  </tr>
+
+  <tr>
+    <td>&bullet;</td><td></td><td>They make it quick to find information</td>
+  </tr>
+
+  <tr>
+    <td>&bullet;</td><td></td><td>They make scanning through information easier</td>
+  </tr>
+
+  <tr>
+    <td>&bullet;</td><td></td><td>It requires less typing than long prose.</td>
+  </tr>
+</table>
+
+<div class="explanation">
+  <p>Sometimes content creators - especially those who don't know HTML - may choose to create &quot;fancy&quot; bulleted lists within content management systems. They may also do copy-and-paste from programs like Microsoft Word. These can sometimes be structured using tables instead of proper HTML lists.  To detect this, the overlay developer might be able to find the appropriate HTML Character Entities, decimal codes, or hex codes as the <em>only</em> child of <code>&lt;td&gt;</code>, but they'd have to look for a lot of weird, esoteric stuff like 	&spades; and &#9724; as well as images, SVG, or icon fonts. </p>
+
+  <p>Of course, finding them and fixing them are two different things. Do you replace the table with a list? If so, how do you ensure the presentation remains the same as that which the author intended? An overlay that messes up the site's presentation would certainly be more of a problem than a solution</p>
+</div>

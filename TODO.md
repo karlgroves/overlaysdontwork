@@ -22,27 +22,16 @@ Custom combobox
 
 Sortable data tables
 
-Accordion
-
 Carousels
 
 Inaccessible custom buttons
 
-Progress bars
-
-Pagination
-
 
 ## Document Structure
-Headings: Ensure headings are marked properly, ordered properly, not used improperly
+
 Lists markup and structure
 
 Resize text
-
-Document landmark roles
-
-Dynamic Content
-Dynamic updates to page content not conveyed to assistive technologies
 
 
 ## Error Handling
@@ -68,21 +57,14 @@ Incorrect or confusing focus order or reading order
 
 Reachable and operable using the keyboard
 
-Focus: Ensure actionable items receive programmatic focus and non-actionable ones do not. Ensure that hidden items do not get focus. Ensure focus is managed when dynamic content appears or changes
-
-Ensure that all changes of focus and context happen as a result of a user action that is expected
+Focus: Ensure actionable items receive programmatic focus and non-actionable ones do not. Ensure that hidden items do not get focus. Ensure focus is managed when dynamic content appears or changes Ensure that all changes of focus and context happen as a result of a user action that is expected
 
 Keyboard Trap
 
-Keyboard shortcuts conflict with screen reader shortcuts
-
-## Language and Content
-
-Language of parts
 
 ## Multimedia
 
-Videos and Video Player
+Video Player must be accessible
 
 Provide accessible alternatives for audio content
 
@@ -124,34 +106,17 @@ Avoid using fixed units in defining sizes for controls or sizes of text within t
 
 Ensure text on the page can be resized up to 200% without loss of content (including overlap of text) or functionality
 
-Avoid layouts and sizing which cause horizontal scrolling
+Avoid horizontal scrolling
 
-Avoid the use of justified text
+Avoid justified text
 
 Provide a line spacing of at least a space and a half.
 
 ## Document Structure
-Avoid the use of markup for purposes which they were not intended (i.e. blockquote or UL for indentation)
 
 Avoid using shape, color, size, and location to convey information and relationships
 
-Ensure actionable items are visually identifiable as actionable
-
 Structure content appropriately through headings
-
-Avoid the use of whitespace and preformatting to render content in multiple columns
-
-Avoid the use of whitespace and preformatting to render content which should be rendered in a table
-
-Ensure page titles are unique
-
-Provide clear, informative TITLE elements on all pages
-
-Ensure tab order reflects expected interaction order
-
-Utilize valid, semantic markup; Avoid utilizing elements in manners for which they were not intended
-
-Dynamic Content
 
 Provide users with the ability to turn off automatic content changes
 
@@ -167,19 +132,9 @@ Provide groupings for long option lists
 
 Utilize fieldsets and legends for complex forms
 
-Avoid the use of server-side image buttons
-
 Group related form fields together
 
 Avoid automatic submission of forms
-
-Avoid use of event handlers to automatically submit forms
-
-Ensure focus is shifted directly to the error message
-
-Provide information regarding any automatically detected errors
-
-Provide clear instructions for forms
 
 Provide informative legends for fieldsets
 
@@ -187,17 +142,9 @@ Utilize standard controls for forms
 
 Ensure field labels are unique
 
-Ensure errors and alerts are indicated the same way site-wide
-
 Provide correction cues to users when input triggers validation errors
 
-Provide confirmation screen prior to final submission (Legal & Financial transactions)
-
-Avoid the use of server-side image buttons
-
 Avoid requiring responses within specified, unchangeable period of time
-
-Provide ability for users to prevent and correct errors when submitting information
 
 Provide alternate text for image buttons
 
@@ -244,7 +191,6 @@ Provide alt attributes for all areas of an image map
 
 Provide alternate text for ASCII art, mathematical formulas, emoticons and leetspeak
 
-Provide an alternate means of accessing CAPTCHA information (i.e. audio CAPTCHA)
 
 Avoid the use of server-side image maps
 
@@ -263,8 +209,6 @@ Utilize both color and pattern within graphs and charts
 ## Keyboard Accessibility
 Ensure the programmatic focus order matches the visual focus order
 
-For dynaminc content: Ensure the programmatic focus order matches the intended interaction order
-
 Avoid applying focus to items which are not actionable
 
 Avoid the sole use of device-dependent events
@@ -281,9 +225,6 @@ Avoid opening new windows without user notice
 
 ## Media
 
-
-Provide alt attributes for applets
-
 Provide an alternative for all prerecorded audio-only time-based media
 
 Provide an alternative for all prerecorded video-only time-based media
@@ -296,9 +237,6 @@ Provide a text transcript for time-based media
 
 Ensure that any automatically starting audio ends within 3 seconds
 
-Ensure that controls to turn on & off sound are located in the same page(s) which 
-plays the sound
-
 Provide the ability for users to turn on sound only at their request
 
 Provide the ability to turn off automatically starting sound
@@ -307,38 +245,15 @@ Ensure that users can navigate to, through, and past all embedded content
 
 Provide users with the means to control multimedia content
 
-
-Provide a link to a text transcript or script
-
 Provide the ability to turn off background audio
-
-Provide a transcript of audio content; link to the transcript adjacent to the link to the audio content
 
 Ensure that captions are complete and do not skip dialog or important sound
 
-In cases where the media is video-only, provide a note explaining there is no sound in the media.
-
-Ensure all text transcripts and/ or audio description is sufficiently informative
-
-Avoid the use of background audio 
-
-Ensure background sounds are at least 20dB lower than the foreground speech content
-
 ## Navigation
-
-Ensure skip link location is appropriate
 
 Utilize the A element for links, and provide a valid hypertext reference
 
 Provide more than one way to locate a web page in a set of pages (i.e. site map, site index, LINK elements in HEAD)
-
-Provide consistent navigation schemes sitewide
-
-Ensure navigational graphics & icons always go to the same destination / serve the same purpose
-
-Provide consistent navigation structures
-
-Provide an indication of current location within the site.
 
 Avoid using different link text to refer to the same location
 
@@ -346,7 +261,7 @@ Ensure link text (and alternate text for images, when used as links) describes t
 
 Avoid using the same link text for different destinations
 
-## Site-Wide Concerns
+## Global issues
 
 Avoid using shape, size, location, position, or sound to convey information
 
@@ -356,13 +271,6 @@ Provide text in addition to color cues, especially when color differences are us
 
 
 Provide ability to pause, stop, or hide content which updates automatically
-
-
-
-
-Avoid referencing size, location, position, or sound in instructions or help information
-
-Provide additional text information to support the identification of items that otherwise rely on sensory information to be understood.
 
 
 ## Tables
@@ -401,8 +309,6 @@ Provide appropriate markup for headings; Avoid using heading markup for text whi
 
 Provide proper markup for emphasized text
 
-Provide proper markup for quotes
-
 Provide proper ordering for headings
 
 Utilize MathML for mathematical formulas
@@ -421,8 +327,6 @@ Ensure headings are clear and informative
 
 Ensure headings are unique
 
-Programatically identify changes in natural language
-
 Identify and define unusual words or phrases
 
 Provide an alt attribute for each `img` element.
@@ -434,7 +338,6 @@ Avoid using justified text.
 Set a `line-height` (leading) that is at least one and a half times the current font size.
 
 Make sure that the tab order reflects the interaction order that you'd expect.
-
 
 Don't automatically submit forms.
 
@@ -478,17 +381,9 @@ Avoid using different link text for links that point to the same destination.
 
 Don't reuse the same link text for links that have different destinations.
 
-Make sure that link text (and the alternate text for any images that are used as links) describes the destination or purpose of the link.
-
-Make sure that navigational graphics consistently go to the same destination or perform the same action.
-
-Give users a way to skip past repetitive navigation links.
-
 Use the `a` element for links, and make sure that each link has a valid `href` attribute.
 
 Don't apply events to elements that aren't typically able to receive focus.
-
-Identify the natural language for the page.
 
 Avoid nesting data tables.
 
@@ -514,13 +409,9 @@ which direction the text should be rendered in.
 
 Use appropriate markup for headings. Don't use heading markup for any text that isn't a heading.
 
-Make sure that headings are in the right order for the content.
-
 Use list markup (such as `ol`, `ul`, and `dl`) for lists and any sub-lists.
 
 Avoid using empty table headers.
 
 Don't apply `role` attributes if you can convey the same information using native 
 semantics.
-
-Don't use an `id` more than once within a page.
