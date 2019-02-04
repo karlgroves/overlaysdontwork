@@ -54,9 +54,6 @@ jQuery(document).ready(function ($) {
 
   $('.cme').each(function () {
     // @TODO toggle its appearance via click and keydown
-  })
-
-
-
+  });
 
 });

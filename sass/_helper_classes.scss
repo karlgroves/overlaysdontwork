@@ -83,20 +83,6 @@
     display: block;
 }
 
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
 .wrap {
     @include wrap;
 }

@@ -9,7 +9,6 @@
     margin: 0 0 $grid-pad 0;
 
     &:after {
-        /* Or @extend clearfix */
         content: "";
         display: table;
         clear: both;

@@ -30,17 +30,31 @@ module.exports = function (grunt) {
             js: {
                 files: {
                     'dist/js/overlaysDontWork.js': [
-                        'src/**/*.js'
+                        'src/js/*.js'
                     ]
                 }
             }
         },
 
-        /* Now compile the SASS hotness */
+        cssmin: {
+            options: {
+                mergeIntoShorthands: false,
+                roundingPrecision: -1
+            },
+            target: {
+                files: {
+                    'dist/style.min.css': ['dist/style.css']
+                }
+            }
+        },
+
         sass: {
             dist: {
+                options: {
+                    style: 'compressed'
+                },
                 files: {
-                    'src/style.css': ['sass/main.scss']
+                    'dist/style.css': ['sass/main.scss']
                 }
             }
         },
@@ -55,12 +69,6 @@ module.exports = function (grunt) {
                 files: {
                     'dist/js/overlaysDontWork.min.js': ['dist/js/overlaysDontWork.js']
                 }
-            }
-        },
-
-        cssmin: {
-            files: {
-                'dist/style.css': ['dist/style.css']
             }
         },
 
@@ -84,16 +92,8 @@ module.exports = function (grunt) {
                     // copy fontawesome css
                     {
                         expand: true,
-                        cwd: 'node_modules/font-awesome/',
-                        src: 'css/*',
-                        dest: 'dist/fontawesome/'
-                    },
-
-                    // copy fontawesome fonts
-                    {
-                        expand: true,
-                        cwd: 'node_modules/font-awesome/',
-                        src: 'fonts/*',
+                        cwd: 'node_modules/@fortawesome/fontawesome-free/css',
+                        src: 'all.css',
                         dest: 'dist/fontawesome/'
                     },
 
@@ -117,7 +117,7 @@ module.exports = function (grunt) {
                 src: ['Gruntfile.js']
             },
             src: {
-                src: ['js/**/*.js']
+                src: ['src/js/*.js']
             }
         },
 
@@ -130,6 +130,6 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('test', ['jsonlint', 'eslint']);
-    grunt.registerTask('build', ['clean', 'concat', 'sass', 'copy']);
+    grunt.registerTask('build', ['clean', 'concat', 'uglify', 'sass', 'cssmin', 'copy']);
     grunt.registerTask('default', ['test', 'build']);
 };
