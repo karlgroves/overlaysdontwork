@@ -1,0 +1,23 @@
+<!--// Ensure all actionable elements can receive focus  //-->
+<h1>All actionable elements should be able to receive focus via keyboard</h1>
+
+<!--Self-sustaining problem code-->
+<!--//
+    @TODO make a fake checkbox
+//-->
+
+
+<p class="explanation">Explain</p>
+<p>Probably one of the most prolific accessibility problems out there is the creation of custom controls that do not
+    have the necessary, roles, states,
+    properties, and behaviors built in.</p>
+
+<p>The above example shows a custom checkbox. Its state is managed by JavaScript and although it correctly reacts to
+    both <code>click</code> and
+    <code>keydown</code> events, it does not get focus via the keyboard. This, of course, is a big problem. Users of
+    screen readers and keyboard-only users
+    will be unable to get focus on this control and therefore will be unable to interact with it.</p>
+
+<p>As so many other examples have shown, an overlay product won't fix these because they won't know what the heck it is
+    in the first place.</p>
+

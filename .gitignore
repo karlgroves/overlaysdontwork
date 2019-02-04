@@ -35,3 +35,4 @@ tramp
 /logs/
 /node_modules/
 /sessions/
+*.iml

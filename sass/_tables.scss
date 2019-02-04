@@ -1,30 +1,30 @@
 
 table {
-  border: 0;
-  border-collapse: collapse;
-  border-spacing: 0;
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 
-  caption {
-    font-weight: bold;
-    font-size: 1em;
-  }
+    caption {
+        font-weight: bold;
+        font-size: 1em;
+    }
 
-  th, td {
-    padding: .25em;
-    border: 1px solid #2C3E50 !important;
-  }
+    th, td {
+        padding: .25em;
+        border: 1px solid #2C3E50 !important;
+    }
 
-  thead th {
-    background-color: #95A5A6;
-    color: #000;
-  }
+    thead th {
+        background-color: #95A5A6;
+        color: #000;
+    }
 
-  tbody tr:nth-child(odd) {
-    background-color: #eee;
-  }
+    tbody tr:nth-child(odd) {
+        background-color: #eee;
+    }
 
-  tbody th {
-    text-align: left;
-  }
+    tbody th {
+        text-align: left;
+    }
 
 }

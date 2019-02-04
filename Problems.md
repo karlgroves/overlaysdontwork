@@ -1,5 +1,6 @@
 # Problems
 
+## Global
 * Language of page not identified
 * Language of parts not identified
 * Disabled zoom

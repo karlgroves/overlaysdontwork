@@ -1,41 +1,42 @@
 {
-  "name": "overlaysdontwork",
-  "version": "1.0.0",
-  "description": "A project to demonstrate that accessibility overlays are garbage",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/karlgroves/overlaysdontwork.git"
-  },
-  "keywords": [
-    "Web",
-    "Accessibility",
-    "WCAG",
-    "Section",
-    "508"
-  ],
-  "author": "Karl Groves",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/karlgroves/overlaysdontwork/issues"
-  },
-  "homepage": "https://github.com/karlgroves/overlaysdontwork#readme",
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^2.2.1",
-    "grunt-contrib-uglify": "^3.1.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-eslint": "^20.1.0",
-    "grunt-sass": "^2.0.0",
-    "grunt-travis-lint": "0.0.3",
-    "jsonlint": "^1.6.2",
-    "load-grunt-tasks": "^3.5.2",
-    "time-grunt": "^1.4.0"
-  },
-  "dependencies": {
-    "fontawesome": "^4.7.2",
-    "jquery": "^3.2.1"
-  }
+    "name": "overlaysdontwork",
+    "version": "1.0.0",
+    "description": "A project to demonstrate that accessibility overlays are garbage",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/karlgroves/overlaysdontwork.git"
+    },
+    "keywords": [
+        "Web",
+        "Accessibility",
+        "WCAG",
+        "Section",
+        "508"
+    ],
+    "author": "Karl Groves",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/karlgroves/overlaysdontwork/issues"
+    },
+    "homepage": "https://github.com/karlgroves/overlaysdontwork#readme",
+    "devDependencies": {
+        "grunt": "^1.0.1",
+        "grunt-contrib-clean": "^1.1.0",
+        "grunt-contrib-concat": "^1.0.1",
+        "grunt-contrib-copy": "^1.0.0",
+        "grunt-contrib-cssmin": "^2.2.1",
+        "grunt-contrib-uglify": "^3.1.0",
+        "grunt-contrib-watch": "^1.0.0",
+        "grunt-eslint": "^20.1.0",
+        "grunt-sass": "^2.0.0",
+        "grunt-travis-lint": "0.0.3",
+        "husky": "^0.14.3",
+        "jsonlint": "^1.6.2",
+        "load-grunt-tasks": "^3.5.2",
+        "time-grunt": "^1.4.0"
+    },
+    "dependencies": {
+        "fontawesome": "^4.7.2",
+        "jquery": "^3.2.1"
+    }
 }

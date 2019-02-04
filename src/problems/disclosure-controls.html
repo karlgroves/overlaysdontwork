@@ -1,0 +1,28 @@
+<!--// Expand/ Collapse & Show/ Hide controls (disclosure controls) //-->
+<h1>Disclosure Controls</h1>
+
+<!--Self-sustaining problem code-->
+<div class="disc">
+    <h2>More reasons why overlays suck</h2>
+    <p>Overlay products cannot detect which items have events bound to them. Read the Explanation below to learn why
+        that matters.</p>
+</div>
+
+
+<p class="explanation">Explain</p>
+<p>This one is a doozy. There's so much wrong that an overlay product will be unable to cope with. This deserves a
+    list:</p>
+
+<ol>
+    <li>There's a click event bound to the
+        <cod>h2</cod>
+        element. Heading elements should not have events bound to them. An overlay product cannot detect this, because
+        doing so requires privileged access that their script cannot have.
+    </li>
+    <li>The <code>p</code> element is shown and hidden by JavaScript based on clicking the heading. It does not react to
+        key events.
+    </li>
+    <li>When the heading is clicked, the state of the control isn't conveyed properly to assistive technologies.</li>
+</ol>
+<p>There's no way for an overlay product to fix these issues, primarily because there's no way to accurately detect the
+    problem in the first place. The overlay will have no idea that this widget exists.</p>

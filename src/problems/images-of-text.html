@@ -1,0 +1,43 @@
+<!--// Avoid using images of text //-->
+<h1>Images of Text</h1>
+
+<!--Self-sustaining problem code-->
+<div>
+    <!--//
+        @TODO finish me
+    //-->
+</div>
+
+<p class="explanation">Explain</p>
+<p>This example shows an image with text inside of it. I like this example because in some cases it is actually possible
+    to determine if an image
+    has text in it. It is also sometimes possible to determine what the text is. Unfortunately doing so accurately is
+    heavily dependent on:</p>
+
+<ol>
+    <li>The quality of the image</li>
+    <li>The legibility of the font in use</li>
+    <li>Having clear boundaries between the letters and the other stuff in the image</li>
+    <li>Having the ability to also understand the <em>structure</em> of the content being displayed.</li>
+</ol>
+
+<p>Chances are, no overlay vendor is going to have the capability to accurately fix text-in-images, as it is a huge
+    hassle.</p>
+
+<ul>
+    <li>Doing so in the browser will also mean leveraging the user's CPU to do that work - something customers would
+        really not want.
+    </li>
+    <li>A server-side process could do this, but:
+        <ul>
+            <li>it would become a horse race between the service and the user, as the generated alternative text would
+                need to be put into place, or
+            </li>
+            <li>the generated text alternative could be cached by the service but it is still another AJAX call that the
+                site owner probably doesn't want
+            </li>
+
+        </ul>
+    </li>
+    <li>Regardless of approach, the challenges of accuracy will always exist</li>
+</ul>

@@ -1,0 +1,33 @@
+<!--// Avoid using color as the only visual means of conveying information  //-->
+<h1>Using color as the only visual means of conveying information</h1>
+
+<!--Self-sustaining problem code-->
+<table class="cTable">
+    <thead>
+    <tr>
+        <th scope="col">Stock Ticker</th>
+        <th scope="col">Name</th>
+        <th scope="col">Amount of Change</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">FC</th>
+        <td>Foo Co.</td>
+        <td class="ohno">1.2</td>
+    </tr>
+    <tr>
+        <th scope="row">AC</th>
+        <td>Acme</td>
+        <td class="ohyes">5.2</td>
+    </tr>
+    </tbody>
+</table>
+
+<p class="explanation">Explain</p>
+<p>The table above uses color to indicate whether the stock value has fallen or risen using a red background color and
+    green background color respectively.
+    This is bad because there's no other mechanism of providing that information. This can be repaired by using a '-' or
+    '+' sign. An overlay product cannot
+    automatically fix this because it will have no idea what the colors mean and therefore no idea what to do to fix
+    it.</p>

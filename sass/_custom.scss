@@ -1,12 +1,51 @@
-
 /**
  * Strip off all focus indication
  */
-*:focus, *:hover{
-  outline: none;
-  cursor: none;
+*:focus, *:hover {
+    outline: none;
+    cursor: none;
 }
 
-*{
-  cursor: none;
+* {
+    cursor: none;
+}
+
+/**
+ * table used on color-conveys-information.html
+ */
+.cTable {
+    border: 0;
+    border-collapse: collapse;
+
+    th {
+        background-color: #eee;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+    }
+
+    .ohno {
+        background-color: red;
+    }
+
+    .ohyes {
+        background-color: green;
+    }
+}
+
+/**
+ * @TODO Fake checkbox used for 'ensure-controls-can-get-focus'
+ */
+.cme {
+
+}
+
+.layout-table {
+    border: 0;
+    border-collapse: collapse;
+
+    td {
+        padding: 2em;
+    }
 }
