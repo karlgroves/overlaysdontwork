@@ -33,22 +33,26 @@ jQuery(document).ready(function ($) {
 
     });
 
-    // @TODO display a randomly timed dialog for an advertisement
+    // load the problems
+    if ($('#put-overlay-vendors-out-of-business') !== undefined) {
 
+        $.getJSON('problems.json', function (data) {
+            var len = data.problems.length;
 
-    // @TODO The number of examples should be chosen from random and the examples themselves should be shuffled
-    $('.put-overlay-vendors-out-of-business').each(function () {
-        // @TODO load the content. display a loading icon for a while *before* loading content
-
-
-    });
+            for (var i = 0; i < len; i++) {
+                $.get('problems/' + data.problems[i] + '.html', function (data) {
+                    $('#put-overlay-vendors-out-of-business').append('<div class="problem">' + data + '</div>');
+                });
+            }
+        });
+    }
 
 
     // create a random refresh
     $('head').append('<meta http-equiv="refresh" content="' + getRandomInt(90) + '">');
 
     // mess up heading levels (do not do this for H1s. We don't want to be too evil)
-    $('h2, h3, h4, h5, h6').each(function () {
+    $('h2, h3, h4, h5, h6').not('footer h2').each(function () {
         $(this).replaceWith(function () {
             return $('<h' + getRandomInt(6) + '>', {html: $(this).html()});
         });
@@ -68,6 +72,7 @@ jQuery(document).ready(function ($) {
 
     $('.disc').each(function () {
         $('disc p').hide();
+
 
         // @TODO make the H2 react to click event and show the 'p' under it
     });

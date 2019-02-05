@@ -17,7 +17,7 @@ ul ul, ol ul, ul ol, ol ol {
     margin-bottom: 0
 }
 
-a {
+main a{
     background: transparent;
     text-decoration: none;
     color: #333;
@@ -27,4 +27,8 @@ code {
     color: #000;
     font-family: 'Source Code Pro', 'courier new', sans-serif;
     word-wrap: break-word;
+}
+
+p.explanation{
+    font-weight: bold;
 }

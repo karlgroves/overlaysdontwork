@@ -2,7 +2,7 @@ html, body{
     @include reset();
 }
 
-#wrapper{
+#wrapper, footer{
     padding: 0 2em;
 }
 
@@ -17,3 +17,23 @@ header{
     line-height: 150%;
     padding: 1em;
 }
+
+
+
+footer {
+    border-top: 1px solid #666;
+    h2{
+        font-size: 1em;
+    }
+
+    ul{
+        list-style-type: none;
+        @include reset();
+        li{
+            list-style-type: none;
+            display: inline;
+            margin: 0 1em;
+        }
+    }
+}
+

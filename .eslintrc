@@ -22,6 +22,7 @@
     "new-cap": "error",
     "no-bitwise": "error",
     "no-caller": "error",
+    "no-console": "off",
     "no-eq-null": "error",
     "no-unused-expressions": "error",
     "no-use-before-define": [
@@ -30,7 +31,7 @@
         "functions": false
       }
     ],
-    "no-var": "warn",
+    "no-var": "off",
     "one-var": [
       "error",
       "never"

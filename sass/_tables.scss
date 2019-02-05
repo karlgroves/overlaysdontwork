@@ -4,6 +4,12 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 
+    th, td {
+        padding: .25em;
+    }
+}
+
+.data_table{
     caption {
         font-weight: bold;
         font-size: 1em;
@@ -19,12 +25,13 @@ table {
         color: #000;
     }
 
-    tbody tr:nth-child(odd) {
+    tbody tr:nth-child(even) {
         background-color: #eee;
     }
 
     tbody th {
         text-align: left;
+
     }
 
 }
