@@ -1,23 +1,9 @@
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+html, body{
+    @include reset();
 }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-hr {
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+#wrapper{
+    padding: 0 2em;
 }
 
 img {
@@ -25,45 +11,9 @@ img {
     border: 0;
 }
 
-.chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* HTML5 display definitions
-   ========================================================================== */
-
-/**
- * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
- * Correct `block` display not defined for `main` in IE 11.
- */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-    display: block;
-}
-
-audio,
-canvas,
-progress,
-video {
-    display: inline-block;
-    vertical-align: baseline;
-}
-
-audio:not([controls]) {
-    display: none;
-    height: 0;
+header{
+    background-color: #036;
+    color: #ccc;
+    line-height: 150%;
+    padding: 1em;
 }

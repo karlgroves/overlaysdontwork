@@ -91,25 +91,6 @@
     white-space: nowrap;
 }
 
-.skiplink {
-    @include offscreen;
-}
-
-.skiplink:hover, .skiplink:focus {
-    clip: auto;
-    height: auto;
-    overflow: visible;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-color: #FEFEFE;
-    color: #474777;
-    margin: .3em 3em;
-    padding: .3em 2em;
-    border: 1px solid $links_and_buttons_color;
-}
-
 .scale {
     max-width: 50%;
     max-height: 50%;

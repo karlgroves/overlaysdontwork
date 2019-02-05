@@ -4,17 +4,6 @@
     }
 }
 
-@mixin clearfix() {
-    &:before,
-    &:after {
-        content: "";
-        display: table;
-    }
-    &:after {
-        clear: both;
-    }
-}
-
 @mixin offscreen() {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px);
