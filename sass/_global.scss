@@ -1,9 +1,14 @@
 html, body{
     @include reset();
+    background-color: #f4f4f4;
 }
 
-#wrapper, footer{
+#wrapper{
     padding: 0 2em;
+    margin: 0 10%;
+    background-color: #fff;
+    border: 1px solid #666;
+
 }
 
 img {
@@ -21,7 +26,8 @@ header{
 
 
 footer {
-    border-top: 1px solid #666;
+    padding: 2em;
+
     h2{
         font-size: 1em;
     }
@@ -37,3 +43,7 @@ footer {
     }
 }
 
+
+.problem{
+    border-top: 1px solid #333;
+}

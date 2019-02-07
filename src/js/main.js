@@ -2,6 +2,8 @@
 
 jQuery(document).ready(function ($) {
 
+    console.log('Ready!');
+
     /**
      *
      * Generates random number from 0 to max
@@ -70,11 +72,15 @@ jQuery(document).ready(function ($) {
      * BEGIN THE JS FOR THE ACTUAL EXAMPLES
      */
 
-    $('.disc').each(function () {
-        $('disc p').hide();
-
+    $('.disc').each(function (i) {
+        console.log(i);
+        $('.disc p').hide();
 
         // @TODO make the H2 react to click event and show the 'p' under it
+        $('.disc h2').on('click', function () {
+            $('.disc p').toggle();
+            console.log('I WAS CLICKED');
+        });
     });
 
 

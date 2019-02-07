@@ -3,6 +3,8 @@ table {
     border: 0;
     border-collapse: collapse;
     border-spacing: 0;
+    table-layout: auto;
+
 
     th, td {
         padding: .25em;
