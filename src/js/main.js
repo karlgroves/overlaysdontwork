@@ -44,6 +44,7 @@ jQuery(document).ready(function ($) {
             for (var i = 0; i < len; i++) {
                 $.get('problems/' + data.problems[i] + '.html', function (data) {
                     $('#put-overlay-vendors-out-of-business').append('<div class="problem">' + data + '</div>');
+
                 });
             }
         });
@@ -51,7 +52,7 @@ jQuery(document).ready(function ($) {
 
 
     // create a random refresh
-    $('head').append('<meta http-equiv="refresh" content="' + getRandomInt(90) + '">');
+    //$('head').append('<meta http-equiv="refresh" content="' + getRandomInt(90) + '">');
 
     // mess up heading levels (do not do this for H1s. We don't want to be too evil)
     $('h2, h3, h4, h5, h6').not('footer h2').each(function () {
@@ -72,15 +73,29 @@ jQuery(document).ready(function ($) {
      * BEGIN THE JS FOR THE ACTUAL EXAMPLES
      */
 
-    $('.disc').each(function (i) {
-        console.log(i);
-        $('.disc p').hide();
+    var waitForEl = function (selector, callback) {
+        if (jQuery(selector).length) {
+            callback();
+        } else {
+            setTimeout(function () {
+                waitForEl(selector, callback);
+            }, 100);
+        }
+    };
 
-        // @TODO make the H2 react to click event and show the 'p' under it
-        $('.disc h2').on('click', function () {
-            $('.disc p').toggle();
-            console.log('I WAS CLICKED');
+    waitForEl('.disc', function () {
+        $('.disc').each(function () {
+            var $self = $(this);
+            var $p = $self.find('p');
+
+            $p.hide();
+
+            $self.find('h2').on('click', function () {
+                $p.toggle();
+                console.log('I WAS CLICKED');
+            });
         });
+
     });
 
 
@@ -88,4 +103,10 @@ jQuery(document).ready(function ($) {
         // @TODO toggle its appearance via click and keydown
     });
 
+
+    waitForEl('.theForm span', function () {
+        $('.theForm span').on('click', function () {
+            document.theForm.submit();
+        });
+    });
 });

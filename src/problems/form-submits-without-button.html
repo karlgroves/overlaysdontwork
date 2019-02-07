@@ -1,13 +1,21 @@
 <h1>Form submits without button</h1>
 
 <!--Self-sustaining problem code-->
-<form name="theForm">
+<form name="theForm" class="theForm">
+    Search:
     <input type=text name="formInput">
 
-    <!--//
-        @TODO fuck this up even more
-    //-->
-    <a href="javascript:document.theForm.submit();">Submit</a>
+    <span>&#x1F50E;</span>
 </form>
 
 <p class="explanation">Explanation</p>
+<p>One of the more weird things we see on the Web are all sorts of elements being used as buttons that aren't actual HTML buttons. Instead, developers are in the practice of
+creating them out of links, SPANs, and DIVs. Without the necessary roles, states, and properties in place for such pseudo-buttons, they can be pretty problematic for keyboard-only users and screenreader users.  The fix for such a thing is easy: use an actual button.  To do so an overlay vendor would need to:</p>
+
+<ol>
+    <li>Detect objects on the screen that have events bound to them</li>
+    <li>Replace those elements with buttons while also not messing up the presentation of the page</li>
+    <li>Modify the page's JavaScript so that their newly substituted button does what the original pseudo-button did.</li>
+</ol>
+
+<p>An overlay product cannot reliably do the above, because Step #1 requires privileged access to the browser. That's something a browser extension could do, but not something that can be done by a 3rd part script like an overlay. </p>
