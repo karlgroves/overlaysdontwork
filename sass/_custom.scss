@@ -3,7 +3,9 @@
  */
 *:focus, *:hover {
     outline: none;
+    /**
     cursor: none;
+     */
 }
 
 * {
@@ -49,4 +51,10 @@
     td {
         padding: 10px;
     }
+}
+
+
+.theForm span{
+    margin-left: -23px;
+    font-size: .75em;
 }

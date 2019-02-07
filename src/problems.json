@@ -8,6 +8,7 @@
         "link-text",
         "tables-for-bullets",
         "unlabelled-form-fields",
-        "images-of-text"
+        "images-of-text",
+        "form-submits-without-button"
     ]
 }
