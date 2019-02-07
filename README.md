@@ -9,4 +9,4 @@ A demonstration of a number of issues that cannot be reliably fixed with so-call
 Contributions welcome! 
 
  * See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing
- * See [Problems.md](Problems.md) for a wishlist of ideas 
+ * See [wishlist.md](wishlist.md) for a wishlist of ideas you can contribute.
