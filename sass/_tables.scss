@@ -4,6 +4,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     table-layout: auto;
+    background-color: #fff;
 
 
     th, td {
@@ -23,17 +24,20 @@ table {
     }
 
     thead th {
-        background-color: #95A5A6;
+        background-color: #ddd;
         color: #000;
+    }
+
+    tbody th {
+        text-align: left;
+        background-color: #fff;
+
     }
 
     tbody tr:nth-child(even) {
         background-color: #eee;
     }
 
-    tbody th {
-        text-align: left;
 
-    }
 
 }

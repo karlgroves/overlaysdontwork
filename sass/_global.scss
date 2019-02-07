@@ -46,4 +46,9 @@ footer {
 
 .problem{
     border-top: 1px solid #333;
+    padding: 2em;
+}
+
+.problem:hover, .problem:focus{
+    background-color:#fefed0;
 }
