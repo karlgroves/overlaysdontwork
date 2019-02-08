@@ -1,0 +1,35 @@
+<h1>Itemized list of global problems</h1>
+
+<p>In addition to the individual problem examples shown elsewhere, this page also has a number of global problems that
+    are
+    unlikely to be addressed by overlays:</p>
+
+<h2>Disabled zoom</h2>
+<p>Page zoom has been disabled. This will cause problems for anyone who wants to enlarge the content for easier viewing,
+    such as users who are low-vision. Overlay products could
+    fix this quite easily, but not without the risk of breaking the site's design.</p>
+
+<h2>Minimum Width</h2>
+<p>The page has been given a minimum width of 1200px. As a result, people with smaller screens or low resolution screens
+    will experience horizontal scroll. Overlay products could
+    fix this quite easily, but not without the risk of breaking the site's design.</p>
+
+<h2>Disabled focus styles &amp; disabled cursor on interactive elements</h2>
+<p>All interactive elements on entire examples section have been given CSS that removes focus and cursor. This is
+    probably the only thing on this page that an overlay could reliably fix.</p>
+
+<h2>Disabled text highlighting</h2>
+<p>Some users choose to read portions of the page by highlighting the text. This practice can be employed by those with
+    some visual impairments or those with cognitive impairments to make the text easier to read, the latter of whom may
+    also activate OS features to read the highlighted text via text-to-speech software.</p>
+
+<h2>Improper order to headings</h2>
+<p>Each problem example is preceded by an <code>h1</code> element. However, within the examples, the heading levels have
+    been randomized. An overlay product could possibly fix this by implementing their own custom version of the mythical
+    <a href="http://adrianroselli.com/2016/08/there-is-no-document-outline-algorithm.html">outline algorithm</a> but
+    they'd also need to copy and re-implement the CSS stylings for those headings so as to not break the design.</p>
+
+<h2>Links open new windows</h2>
+<p>All off-domain links are set to open in new windows. These do not use <code>target=&quot;_blank&quot;</code> (which
+    could easily be fixed by an overlay) but use JavaScript for the new windows. As stated elsewhere, an overlay cannot
+    fix this because it won't be able to detect the events bound to these links.</p>

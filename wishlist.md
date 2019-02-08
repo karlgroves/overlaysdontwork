@@ -1,12 +1,14 @@
 # Wishlist
 
+## Content
+* Section of content uses misidentified language
+
 ## Images
 
 * Avoid duplicating alternate text (i.e., redundant text which says the same thing)
 * Ensure all images contain alternate text
 * Ensure alternate text for actionable graphics (i.e. icons, image buttons, navigational elements) clearly describes the destination or action
 * Ensure image alternate text is clear and informative
-* For images with text in them and/ or representing text, ensure the alternate text includes the text in the image
 * Provide "null" alt attributes (using alt="") for images which do not provide information (or do not require alternate text because the image is described in page content)
 * Provide a long description for complex images or graphics
 * Provide a text alternative for CSS images which convey content 
@@ -43,7 +45,6 @@
 * Avoid using header cells and other structural markup in layout tables
 * Ensure tabular data and the header cells for that data remain in the same table
 * Identify header cells for all data tables
-* If tables are used for layout, ensure content reads properly when linearized and that they have role="presentation"
 * Provide the markup necessary to convey relationships between header cells and data cells in data tables
 * Use tables to lay out tabular data
 * Use the caption element to associate caption information with data tables
@@ -55,8 +56,15 @@
 * Make sure that all interactive elements can receive focus using the keyboard.
 * Make sure that the keyboard focus order matches the visual focus order.
 
+## Forms
+
+* Ambiguous form fields that lack grouping
+* Clearly disclose constraints for form fields
+
 ## WCAG Failures
 
+* F9: Failure of Success Criterion 3.2.5 due to changing the context when the user removes focus from a form element
+* F14: Failure of Success Criterion 1.3.3 due to identifying content only by its shape or location
 * F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)
 * F31: Failure of Success Criterion 3.2.4 due to using two different labels for the same function on different Web pages within a set of Web pages
 * F36: Failure of Success Criterion 3.2.2 due to automatically submitting a form and presenting new content without prior warning when the last field in the form is given a value

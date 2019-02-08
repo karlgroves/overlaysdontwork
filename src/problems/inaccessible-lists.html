@@ -1,7 +1,5 @@
-<!--//  Inaccesible lists //-->
 <h1>Inaccessible lists</h1>
 
-<!--Self-sustaining problem code-->
 <ul>
     <li>Using color as the only visual means of conveying information</li>
     <li>All actionable elements should be able to receive focus via keyboard</li>
@@ -20,6 +18,11 @@
 </div>
 
 <p class="explanation">Explanation</p>
-<p>The above contains two lists, each with their own distinct problems. The first list contains an improperly nested sub-list. As a consequence, it will probably
-be exposed to screen readers as a list of 6 items when it is actually a list of 3 items, the 3rd of which has its own sub-list of 3 items.  The second list is a series of items separated by <code>br</code> tags. It has no list structure at all.</p>
-<p>Of all of the examples on this site, an overlay product might be able to fix the first list, though they likely do not. The second list is less likely to be fixed by an overlay product because it first must make the judgment call that a series of text strings with multiple <code>br</code> tags in it represents a list.</p>
+<p>The above contains two lists, each with their own distinct problems. The first list contains an improperly nested
+    sub-list. As a consequence, it will probably
+    be exposed to screen readers as a list of 6 items when it is actually a list of 3 items, the 3rd of which has its
+    own sub-list of 3 items. The second list is a series of items separated by <code>br</code> tags. It has no list
+    structure at all.</p>
+<p>Of all of the examples on this site, an overlay product might be able to fix the first list, though they likely do
+    not. The second list is less likely to be fixed by an overlay product because it first must make the judgment call
+    that a series of text strings with multiple <code>br</code> tags in it represents a list.</p>
