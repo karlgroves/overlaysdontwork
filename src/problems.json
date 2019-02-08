@@ -1,5 +1,6 @@
 {
     "problems": [
+        "global-problems",
         "color-conveys-information",
         "disclosure-controls",
         "inaccessible-lists",

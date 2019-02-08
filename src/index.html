@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -75,7 +75,7 @@
         </div>
     </main>
 
-    <section class="sr-only" id="srInfo" tabindex="-1" aria-labelledby="srInfoHeader">
+    <section class="sr-only" id="srInfo" tabindex="-1" aria-labelledby="srInfoHeader" lang="en">
         <h2 id="srInfoHeader">Work-Arounds for Screenreader users</h2>
         <p>As I said in the <a href="#explanation">explanation</a> this page is horribly broken. I did this on purpose
             to
@@ -84,21 +84,17 @@
 
         <ol>
             <li>Wrong language identified for the content</li>
-            <li>Random focus shift</li>
-            <li>Takes too long to load examples</li>
-            <li>Random refresh</li>
-            <li>Random dialog advertisement</li>
-            <li>Random heading levels</li>
             <li>Random tab order</li>
         </ol>
 
-        <p>That said, things are still going to be a little wacky. Here's how to understand the content. Each example
+        <p>That said, things are still going to be a little wacky. Here's how to understand the content. This page makes use of landmark roles.
+            The examples are within the 'main' landmark. Each example
             starts
             with a heading-level-1 element. Below that is the example of an accessibility problem that overlays cannot
             fix.
             When you hear the word 'Explain', what follows is the explanation of the example and why an overlay cannot
             fix
-            it. The explanation will always have accessible markup within it so you can understand the problem</p>
+            it. The explanation will always have accessible markup within it so you can understand the problem.</p>
     </section>
 
 </div>

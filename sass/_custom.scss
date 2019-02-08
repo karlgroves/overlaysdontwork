@@ -3,9 +3,8 @@
  */
 *:focus, *:hover {
     outline: none;
-    /**
     cursor: none;
-     */
+    pointer-events: none;
 }
 
 * {

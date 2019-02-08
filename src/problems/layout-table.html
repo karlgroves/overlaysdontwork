@@ -1,6 +1,5 @@
 <h1>Using tables for layout</h1>
 
-<!--Self-sustaining problem code-->
 <table class="layout_table">
     <tr>
         <td>First Name</td>
@@ -47,3 +46,4 @@
 </table>
 
 <p class="explanation">Explanation</p>
+The above table demonstrates a table being used for the layout of a form. The table places the field labels in different cells from the fields. It is likely that an overlay product could <em>guess</em> that this table is being used for layout, but fixing the problem is going to be impossible to do reliably.  One common tactic for layout tables is to add <code>role=&quot;presentation&quot;</code> to the table. However, all that does is tell screenreaders to stop announcing the parts of the table. It does nothing to fix the fact that the reading order of the table is also a confusing mess that an overlay product simply couldn't do anything useful with.
