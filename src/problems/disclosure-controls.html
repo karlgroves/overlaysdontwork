@@ -2,19 +2,15 @@
 
 <div class="disc">
     <h2>More reasons why overlays don't work</h2>
-    <p>Overlay products cannot detect which items have events bound to them. Read the Explanation below to learn why
-        that matters.</p>
+    <p>Overlay products cannot detect which items have events bound to them. Read the Explanation below to learn why that matters.</p>
 </div>
 
 <p class="explanation">Explanation</p>
-<p>This one is a doozy. There's so much wrong that an overlay product will be unable to cope with. This deserves a
-    list:</p>
+<p>This one is a doozy. There's so much wrong that an overlay product will be unable to cope with. This deserves a list:</p>
 
 <ol>
-    <li>There's a <code>click</code> event bound to the
-        <code>h2</code>
-        element. Heading elements should not have events bound to them. An overlay product cannot detect this, because
-        doing so requires privileged access that their script cannot have.
+    <li>There's a <code>click</code> event bound to the <code>h2</code> element. Heading elements should not have events
+        bound to them. An overlay product cannot detect this, because doing so requires privileged access to the browser that their script cannot have.
     </li>
     <li>The <code>p</code> element is shown and hidden by JavaScript based on clicking the heading. It does not react to
         key events.

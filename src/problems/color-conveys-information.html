@@ -1,6 +1,6 @@
 <h1>Using color as the only visual means of conveying information</h1>
 
-<table class="cTable data_table">
+<table class="cTable data_table" role="presentation">
     <thead>
     <tr>
         <th scope="col">Stock Ticker</th>
@@ -24,8 +24,8 @@
 
 <p class="explanation">Explanation</p>
 <p>The table above uses color to indicate whether the stock value has fallen or risen. It uses a red background color and
-    green background color respectively.
-    This is bad because there's no other mechanism of providing that information. This can be repaired by using a '-' or
-    '+' sign. An overlay product cannot
-    automatically fix this because it will have no idea what the colors mean and therefore no idea what to do to fix
-    it.</p>
+    green background color respectively. This is bad because there's no other mechanism of providing that information.
+    This can be repaired by using a '-' or '+' sign. An overlay product cannot automatically fix this because it will have
+    no idea what the colors mean and therefore no idea what to do to fix it.</p>
+<p>In addition, this table has <code>role=&quot;presentation&quot;</code>. An automated tool could probably find this, but it is
+unlikely that an overlay tool will find it and do anything about it.</p>

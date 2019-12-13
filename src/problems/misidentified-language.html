@@ -1,0 +1,17 @@
+<h1>Misidentified Language</h1>
+
+<p><span lang="de" dir="rtl">كيف يؤثر الهواء الملوث على صحة أمعائك؟</span></p>
+
+<p class="explanation">Explanation</p>
+<p>The above passage of text was written in Arabic. It says &quot;How does polluted air affect the health of your bowel&quot;
+    (a story headline from the BBC Arabic site, February 5, 2019). The passage's language has not been identified.
+    As a result, it will not be read properly to screenreader users.</p>
+<p>To automatically fix this, an overlay product would need to: </p>
+<ol>
+    <li>Detect that the passage of text is in a different language than the identified language on its container
+    </li>
+    <li>Determine which language it is</li>
+    <li>Mark that passage with the correct ISO language code</li>
+</ol>
+<p>These are all possible. In fact, this could even be done in the site visitor's browser. However, doing so requires
+    analyzing every element in the DOM that holds any text in it and attempting to determine its language.</p>

@@ -10,6 +10,7 @@
         "tables-for-bullets",
         "unlabelled-form-fields",
         "images-of-text",
-        "form-submits-without-button"
+        "form-submits-without-button",
+        "misidentified-language"
     ]
 }

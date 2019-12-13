@@ -1,8 +1,5 @@
 # Wishlist
 
-## Content
-* Section of content uses misidentified language
-
 ## Images
 
 * Avoid duplicating alternate text (i.e., redundant text which says the same thing)
