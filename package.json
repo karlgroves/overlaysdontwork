@@ -30,7 +30,7 @@
         "grunt-contrib-watch": "^1.1.0",
         "grunt-eslint": "^20.1.0",
         "grunt-jsonlint": "^1.1.0",
-        "grunt-sass": "^2.0.0",
+        "grunt-sass": "^4.0.1",
         "grunt-travis-lint": "0.0.3",
         "husky": "^0.14.3",
         "jsonlint": "^1.6.2",
